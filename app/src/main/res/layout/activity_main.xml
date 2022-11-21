@@ -4,4 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btn_camera_button"
+        android:layout_width="83dp"
+        android:layout_height="69dp"
+        android:contentDescription="@string/camera_button"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/btn_camera_foreground" />
+
+    <ImageButton
+        android:id="@+id/btn_video_online"
+        android:contentDescription="@string/video_button"
+        android:layout_width="83dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/btn_video_online_2_round" />
+
+    <TextView
+        android:id="@+id/txtCameraId"
+        android:layout_width="317dp"
+        android:layout_height="427dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

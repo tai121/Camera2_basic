@@ -21,31 +21,25 @@
         android:id="@+id/btn_camera_button"
         android:layout_width="83dp"
         android:layout_height="69dp"
-        android:contentDescription="@string/camera_button"
         android:layout_marginStart="52dp"
         android:layout_marginBottom="52dp"
+        android:contentDescription="@string/camera_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/btn_camera_foreground" />
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
 
     <ImageButton
         android:id="@+id/btn_video_online"
-        android:contentDescription="@string/video_button"
         android:layout_width="83dp"
         android:layout_height="69dp"
         android:layout_marginEnd="52dp"
         android:layout_marginBottom="52dp"
+        android:contentDescription="@string/video_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@mipmap/btn_video_online_2_round" />
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/presence_video_online" />
 
-    <TextView
-        android:id="@+id/txtCameraId"
-        android:layout_width="317dp"
-        android:layout_height="427dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginEnd="68dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
